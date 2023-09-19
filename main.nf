@@ -22,10 +22,10 @@ process copyFile {
     echo ${outputDir}
     echo ${inputFile}
     # Create the output directory if it doesn't exist
-    # mkdir -p ${outputDir}
+    mkdir -p ${outputDir}
 
     # Copy the input file to the output directory
-    #cp ${inputFile} ${outputDir}/output_file.txt
+    cp ${inputFile} ${outputDir}/output_file.txt
     """
 }
 
