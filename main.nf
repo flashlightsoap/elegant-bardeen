@@ -6,10 +6,10 @@ process MYSCRIPT{
         stdout
 
         script:
-        """
+        ```
         echo "Executing Python script..."
         
-        """
+        ```
 }
 
 workflow {
