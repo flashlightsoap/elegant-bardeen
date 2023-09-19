@@ -25,8 +25,13 @@ process copyFile {
     pwd
     echo ${outputDir}
     echo ${inputFile}
+
+    cat ${inputFile}
+
     # Create the output directory if it doesn't exist
     mkdir -p ${outputDir}
+
+    ls -alrt
 
     # Copy the input file to the output directory
     cp ${inputFile} ${outputDir}/output_file.txt
