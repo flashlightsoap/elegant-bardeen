@@ -19,16 +19,17 @@ process copyFile {
     script:
     """
     ls
-    
+    echo "1111111111111"
+    ls -alrt
     echo "======="
     pwd
     echo ${outputDir}
     echo ${inputFile}
     # Create the output directory if it doesn't exist
-    mkdir -p ${outputDir}
+    #mkdir -p ${outputDir}
 
     # Copy the input file to the output directory
-    cp ${inputFile} ${outputDir}/output_file.txt
+    #cp ${inputFile} ${outputDir}/output_file.txt
     """
 }
 
