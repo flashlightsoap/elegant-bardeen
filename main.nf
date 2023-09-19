@@ -31,7 +31,7 @@ process copyFile {
 // Define the workflow
 workflow {
     // Run the copyFile process with the inputFile as input
-    copyFile(params.inputFile)
+    copyFile(params.inputFile) | view
 }
 
 // Define where to store the workflow execution and logs
