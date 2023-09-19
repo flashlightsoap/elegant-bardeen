@@ -34,7 +34,7 @@ process copyFile {
     ls -alrt
 
     # Copy the input file to the output directory
-    cp ${inputFile} ${outputDir}/output_file.txt
+    #cp ${inputFile} ${outputDir}/output_file.txt
     """
 }
 
