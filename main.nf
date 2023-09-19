@@ -9,7 +9,7 @@ process MYSCRIPT{
         script:
         """
         #!/usr/bin/env python
-        echo "Executing Python script..."
+        print("Executing Python script...")
         
         """
 }
