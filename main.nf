@@ -25,7 +25,7 @@ process copyFile {
     mkdir -p ${outputDir}
 
     # Copy the input file to the output directory
-    cp ${inputFile} ${outputDir}/output_file.txt
+    cp /Users/amaan.saifan/Documents/kube/${inputFile} ${outputDir}/output_file.txt
     """
 }
 
