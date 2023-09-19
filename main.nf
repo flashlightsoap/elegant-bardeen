@@ -1,5 +1,5 @@
 process MYSCRIPT{
-
+        container 'python:3.8-slim'
         input:
         val STR
 
@@ -8,7 +8,6 @@ process MYSCRIPT{
 
         script:
         """
-        #!/usr/bin/env python
         print("$STR".upper())
         """
 }
