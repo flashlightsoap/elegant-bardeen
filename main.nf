@@ -9,8 +9,9 @@ process MYSCRIPT{
         script:
         """
         #!/usr/bin/env python
+        echo "Executing Python script..."
         print("${STR}".upper())
-        #print("$STR".upper())
+        echo "Script execution completed."
         """
 }
 
