@@ -11,6 +11,7 @@ process copyFile {
     input:
     file inputFile
 
+
     output:
     stdout
     //file "/Users/amaan.saifan/Documents/kube/output_file.txt"
