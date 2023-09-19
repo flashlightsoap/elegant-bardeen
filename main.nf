@@ -18,6 +18,7 @@ process copyFile {
 
     script:
     """
+    #!/bin/bash
     ls
     echo "1111111111111"
     ls -alrt
