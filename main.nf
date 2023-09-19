@@ -18,12 +18,13 @@ process copyFile {
 
     script:
     """
-    echo ls
-    ls /Users/amaan.saifan/Documents/kube/input.txt
+    ls
+    
     echo "======="
     pwd
     echo ${outputDir}
     echo ${inputFile}
+    ls /Users/amaan.saifan/Documents/kube/input.txt
     # Create the output directory if it doesn't exist
     #mkdir -p ${outputDir}
 
