@@ -8,7 +8,9 @@ process MYSCRIPT{
 
         script:
         """
-        print("$STR".upper())
+        #!/usr/bin/env python
+        print("${STR}".upper())
+        #print("$STR".upper())
         """
 }
 
