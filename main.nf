@@ -1,7 +1,7 @@
 #!/usr/bin/env nextflow
 
 // Define the input parameter
-params.inputFile = file("/Users/amaan.saifan/Documents/kube/input.txt")
+params.inputFile = file("input.txt")
 
 // Define the output directory
 outputDir = "output"
@@ -24,12 +24,11 @@ process copyFile {
     pwd
     echo ${outputDir}
     echo ${inputFile}
-    ls /Users/amaan.saifan/Documents/kube/input.txt
     # Create the output directory if it doesn't exist
-    #mkdir -p ${outputDir}
+    mkdir -p ${outputDir}
 
     # Copy the input file to the output directory
-    #cp /Users/amaan.saifan/Documents/kube/${inputFile} ${outputDir}/output_file.txt
+    cp ${inputFile} ${outputDir}/output_file.txt
     """
 }
 
