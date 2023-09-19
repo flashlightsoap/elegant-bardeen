@@ -27,12 +27,12 @@ process copyFile {
     echo ${outputDir}
     echo ${inputFile}
 
-    cat ${inputFile}
+    #cat ${inputFile}
 
     # Create the output directory if it doesn't exist
-    mkdir -p ${outputDir}
+    #mkdir -p ${outputDir}
 
-    ls -alrt
+    #ls -alrt
 
     # Copy the input file to the output directory
     #cp ${inputFile} ${outputDir}/output_file.txt
